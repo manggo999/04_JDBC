@@ -3,7 +3,6 @@ package edu.kh.jdbc;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
 
@@ -49,7 +48,7 @@ public class JDBCExample2 {
                     password);
 			
 			// 객체 주소 확인
-			System.out.println(conn);
+			//System.out.println(conn);
 			
 			
 			
@@ -102,7 +101,6 @@ public class JDBCExample2 {
 		} catch (Exception e) {
 			// 최상위 예외인 Exception을 이용해서 모든 예외를 처리
 			// -> 다형성 업캐스팅 적용
-			System.out.println("해당 Class를 찾을 수 없습니다.");
 			e.printStackTrace();
 			
 		} finally {

@@ -25,7 +25,7 @@ public class JDBCExample1 {
 		// 사번, 이름, 부서코드, 직급코드, 급여, 입사일 조회 후 
 		// 이클립스 콘솔에 출력
 		
-		/* 1. JDBC 객체 참조용 변수 선언*/
+		/* 1. JDBC 객체 참조용 변수 선언 */
 		
 		// java.sql.Connection
 		// 특정 DBMS와 연결하기 위한 정보를 저장한 객체
@@ -140,6 +140,7 @@ public class JDBCExample1 {
 			// int, long          NUMBER (정수만 저장된 컬럼)
 			// float, double      NUMBER (정수 + 실수)
 			// java.sql.Date      DATE
+			
 			String empId = rs.getString("EMP_ID");
 		    String empName = rs.getString("EMP_NAME");
 		    String deptCode= rs.getString("DEPT_CODE");
@@ -154,9 +155,6 @@ public class JDBCExample1 {
 			
 			
 		}
-		
-		
-		
 		
 		
 		} catch (ClassNotFoundException e) {
@@ -181,7 +179,7 @@ public class JDBCExample1 {
 				// 만들어진 역순으로 close 수행하는 것을 권장
 				if(rs != null) rs.close();
 				if(stmt != null) stmt.close();
-				if( conn != null) conn.close();
+				if(conn != null) conn.close();
 				
 				// if 문은 NullPointerException 방지용 구문
 				
