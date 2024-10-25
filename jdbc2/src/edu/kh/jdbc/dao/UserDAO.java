@@ -88,6 +88,11 @@ public class UserDAO {
 		
 		return user; // 결과 반환( 생성된 User 또는 null )
 	}
+	
+	
+	
+	
+	
 
 	/** User 등록 DAO 메서드
 	 * @param conn : DB 연결 정보가 담겨있는 Connection 객체
